@@ -1,0 +1,94 @@
+/*DEV: CÁSSIA OLIVEIRA DOS SANTOS
+  TURMA: INFO19
+  PROFESSOR: KLEBERSON JUNIO DO AMARAL SERIQUE*/
+
+/*Tira a margem e preenchimento de todos os elementos/caixas HTML:*/
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+/*Fundo (exibido em toda a tela) será um gradiente na diagonal, 45°, que vai de um tom de roxo, passando pelo rosa até chegar em um amarelo;
+	A cor da fonte será branca, tendo a Times como primeira opção e 1rem de tamanho.	*/
+body{
+
+	background-image: linear-gradient(45deg, #d912f7, #fc198a, #f2d813);
+	height: 100vh; /*usa a width ou height da viewport*/
+	color: #ffffff;
+	font-family: Times, Helvetica, Arial, sans-serif;
+	font-size: 1rem;
+	text-align: center;
+	position: relative;
+}
+
+.header{
+	color: black;
+}
+
+/*Estilização da div que abriga a calculadora:
+	- Será centralizada no centro da página; 
+	- Ocupará apenas o próprio espaço, tendo sua posição com base no corpo da página;
+	- Terá a cor preta, bordas arredondadas e espaçamento entre borda e elementos.*/
+.calculator{
+	position: absolute; /*A caixa sairá do fluxo padrão do doc. sem afetar o comportamento dos outros elementos*/
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(0, 0, 0, 0.98);
+	border-radius: 15px;
+	padding: 15px;
+	margin-top: 10px;
+	display: grid;
+}
+
+/*Estilização dos botões da calculadora:
+	Terão um tom de preto;*/
+.button{
+	width: 2.9rem;
+	height: 2.9rem;
+	font-size: 1.5rem;
+	cursor: pointer;
+	background-color: #1f1f1f;
+	border: none;
+	color: #ffffff;
+	margin: 3px;
+	border-radius: 2px;
+}
+
+/*Quando o cursor do mouse estiver em cima do botão, ficará na mesma cor de fundo;*/
+.button:hover{
+	background-color: rgba(0, 0, 0, 0.98);
+}
+
+#buttonZero{
+	width: 6.175rem;/*Ocupa o espaço de 2 botões + o margin de 3px (=6px)*/
+	
+}
+
+#buttonEqual{
+	height: 6.175rem; /*equivale ao espaço de 4 botões + o margin de 3px de cada um*/
+}
+
+/*Estilização do campo de resultado: 
+	- terá a largura aproximada dos 4 botões + cada margin de 3px;
+	- altura de 1.6 rem;
+	- cor branca e com cantos arredondados.*/
+#operationResult{
+	width: 12.35rem;
+	height: 1.6rem;
+	margin: 5px;
+	padding: 5px;
+	background-color: white;
+	align-items: center;
+	font-size: 25px;
+	color: black;
+	text-align: right;
+	border-radius: 2px;
+}
+
+/*
+footer{
+	color: black;
+	text-align: center;
+	position: relative;
+}*/

@@ -1,0 +1,79 @@
+<!-- DEV: CÁSSIA OLIVEIRA DOS SANTOS
+	 TURMA: INFO19
+	 PROFESSOR: KLEBERSON JUNIO DO AMARAL SERIQUE -->
+
+<!DOCTYPE html>
+	<html lang="pt-br">
+
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<title>Calculator with JavaScript</title>
+			<link rel="stylesheet" type="text/css" href="styleCalculator.css">
+		</head>
+
+		<body>
+
+			<!-- Div que abrigará todos os elementos que aparecerão na página -->
+			<div class="container">
+				<div class="header">
+					<h1>Calculadora com JavaScript</h1>
+					<h3>Cássia Santos</h3><br>
+					<h2>Faça seus cálculos básicos aqui!</h2>
+				</div>
+
+				<!-- Div que conterá a calculadora propriamente dita e alguns elementos-->
+				<div class="calculator">
+					<h1>Calculadora</h1>
+					<!-- Exibirá o resultados das operações da calculadora -->
+					<p id="operationResult"></p>
+
+					<!-- Criação dos botões da calculadora: -->
+					<table>
+						<!-- Primeira linha dos botões da calculadora: -->
+						<tr>
+							<!-- onclick="insert('...') chama a função e joga o valor entre parênteses como paramêtro -->
+							<td><button class="button" onclick="clean()">C</button></td>
+							<td><button class="button" onclick="back()">del</button></td>
+							<td><button class="button" onclick="insert('/')">/</button></td>
+							<td><button class="button" onclick="insert('*')">X</button></td>
+						</tr>
+
+						<!-- Segunda linha dos botões da calculadora: -->
+						<tr>
+							<td><button class="button" onclick="insert('7')">7</button></td>
+							<td><button class="button" onclick="insert('8')">8</button></td>
+							<td><button class="button" onclick="insert('9')">9</button></td>
+							<td><button class="button" onclick="insert('-')">-</button></td>
+						</tr>
+
+						<!-- Terceira linha dos botões da calculadora: -->
+						<tr>
+							<td><button class="button" onclick="insert('4')">4</button></td>
+							<td><button class="button" onclick="insert('5')">5</button></td>
+							<td><button class="button" onclick="insert('6')">6</button></td>
+							<td><button class="button" onclick="insert('+')">+</button></td>
+						</tr>
+
+						<!-- Quarta linha dos botões da calculadora: -->
+						<tr>
+							<td><button class="button" onclick="insert('1')">1</button></td>
+							<td><button class="button" onclick="insert('2')">2</button></td>
+							<td><button class="button" onclick="insert('3')">3</button></td>
+							<td rowspan="2"><button class="button" id="buttonEqual" onclick="calculaOperacao()">=</button></td> <!-- Este botão ocupará 2 linhas -->
+						</tr>
+
+						<!-- Quinta linha dos botões da calculadora: -->
+						<tr>
+							<td colspan="2"><button class="button" id="buttonZero" onclick="insert('0')">0</button></td> <!-- Este botão ocupará 2 colunas -->
+							<td><button class="button" onclick="insert('.')">.</button></td>				
+						</tr>
+					</table>
+				</div> <!--Fim da div calculator-->
+			</div> <!--Fim da div container-->
+
+			<!-- Importação do JavaScript da página: -->
+			<script src="lifeCalculator.js"></script>
+			<!-- <footer>Página desenvolvida por Cássia Santos</footer> -->
+		</body>
+	</html>  
