@@ -12,7 +12,7 @@
 	A cor da fonte será branca, tendo a Times como primeira opção e 1rem de tamanho.	*/
 body{
 
-	background-image: linear-gradient(45deg, #f5b3ff, #ffc0df, #fff5ac);
+	background-image: linear-gradient(45deg, #eca4f7, #fda4d1, #fcef92);
 	height: 100vh; /*usa a width ou height da viewport*/
 	color: #ffffff;
 	font-family: Times, Helvetica, Arial, sans-serif;
